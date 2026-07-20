@@ -9,6 +9,7 @@ firewalled government networks like the rest of the app).
 import streamlit as st
 
 st.set_page_config(page_title="User Instruction Manual | Grant Application Quality Checker", layout="wide")
+
 st.html(
     """
     <style>
@@ -38,7 +39,7 @@ GUIDE_HTML = """
 [data-testid="stHeaderActionElements"] { display: none; }
 
 /* Guide styles */
-.nsw-header__logo-img { height: 48px; width: auto; margin-right: 1rem; }
+.nsw-header__logo-img { height: 75px; width: auto; margin-right: 1rem; }
 .sidebar-sticky { position: sticky; top: 1rem; }
 main figure img {
   max-width: 500px;
@@ -111,7 +112,11 @@ main figure img {
   <div class="nsw-header__container">
     <div class="nsw-header__inner">
       <div class="nsw-header__main">
-        <img src="/app/static/guide/images/nsw-ra-logo.png" alt="NSW Reconstruction Authority logo" class="nsw-header__logo-img">
+        <div class="nsw-header__image">
+          <a href="https://www.nsw.gov.au/departments-and-agencies/nsw-reconstruction-authority">
+          <img src="/app/static/guide/images/nsw-ra-logo.png" alt="NSW Reconstruction Authority logo" class="nsw-header__logo-img">
+          </a>
+        </div>
         <div class="nsw-header__name">
           <div class="nsw-header__title">Grant Application Quality Checker</div>
           <div class="nsw-header__description">NSW Reconstruction Authority &mdash; User Instruction Manual</div>
@@ -121,16 +126,6 @@ main figure img {
   </div>
 </header>
 
-<!-- BREADCRUMBS -->
-<div class="nsw-container nsw-p-bottom-xs">
-  <nav aria-label="Breadcrumbs" class="nsw-breadcrumbs">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li><a href="/">Grants</a></li>
-      <li><a href="#" class="current" aria-current="page">Grant Application Quality Checker</a></li>
-    </ol>
-  </nav>
-</div>
 
 <!-- MAIN LAYOUT -->
 <div class="nsw-container nsw-p-top-sm nsw-p-bottom-lg">
@@ -183,7 +178,7 @@ main figure img {
       </div>
 
       <div class="nsw-block" id="step-1">
-        <h2>1. Download the grant application as a PDF</h2>
+        <h2>1. Download the Grant Application As a PDF</h2>
         <ul>
           <li>Open your grant application in SmartyGrants.</li>
           <li>Click <strong>Download PDF</strong>.</li>
@@ -196,7 +191,7 @@ main figure img {
       </div>
 
       <div class="nsw-block" id="step-2">
-        <h2>2. Upload your files</h2>
+        <h2>2. Upload Your Files</h2>
         <ul>
           <li>Open the Grant Application Quality Checker.</li>
           <li>Upload the SmartyGrants PDF.</li>
@@ -208,7 +203,7 @@ main figure img {
       </div>
 
       <div class="nsw-block" id="step-3">
-        <h2>3. Copy the Damage Information &ndash; EPAR table</h2>
+        <h2>3. Copy the Damage Information &ndash; EPAR Table</h2>
         <ul>
           <li>Go to the Damage Asset Table section.</li>
           <li>Copy the table.</li>
@@ -223,7 +218,7 @@ main figure img {
       </div>
 
       <div class="nsw-block" id="step-4">
-        <h2>4. Paste the asset table</h2>
+        <h2>4. Paste the Asset Table</h2>
         <ul>
           <li>Paste the damaged asset table into the text field in the Grant Checker.</li>
         </ul>
@@ -234,7 +229,7 @@ main figure img {
       </div>
 
       <div class="nsw-block" id="step-5">
-        <h2>5. Confirm and check application</h2>
+        <h2>5. Confirm and Check Application</h2>
         <ul>
           <li>Confirm that both the PDF and pasted text have uploaded successfully.</li>
           <li>Select <strong>Check Application</strong>.</li>
@@ -246,7 +241,7 @@ main figure img {
       </div>
 
       <div class="nsw-block" id="understanding-results">
-         <h2>Understanding your results</h2>
+         <h2>Understanding Your Results</h2>
   <p>Each application is assigned a status after the quality check. The status helps you understand whether your application meets the checker's validation rules and whether any issues need to be addressed before submission.</p>
 
   <div class="nsw-table-responsive">
@@ -314,7 +309,7 @@ main figure img {
       </div>
 
       <div class="nsw-block" id="faqs">
-        <h2>Frequently asked questions</h2>
+        <h2>Frequently Asked Questions</h2>
 
         <details class="guide-faq">
           <summary>Does meeting the eligibility criteria guarantee funding?</summary>
@@ -338,13 +333,8 @@ main figure img {
     <div class="nsw-container">
       <p class="nsw-footer__acknowledgement">We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
       <hr>
-      <ul>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Accessibility</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
       <div class="nsw-footer__info">
-        <div class="nsw-footer__copyright">&copy; NSW Government</div>
+        <div class="nsw-footer__copyright">Copyright &copy; 2026</div>
       </div>
     </div>
   </div>

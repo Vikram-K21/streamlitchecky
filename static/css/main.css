@@ -16,7 +16,8 @@
 
 [data-testid="stMainBlockContainer"] {
     padding-top: 0;
-    max-width: 1320px;
+    width: 100% !important;
+    max-width: none !important;
 }
 
 /* Full-bleed NSW masthead regardless of Streamlit's container padding. */

@@ -13,6 +13,7 @@ st.html(
             padding-top: 2rem !important;
             padding-left: 2rem !important;
             padding-right: 2rem !important;
+            box-sizing: border-box !important;
         }
     </style>
     """
@@ -38,7 +39,7 @@ render_uploadinfo()
 render_nosection()
 render_nosection()
 
-st.header("Upload SmartyGrants export", text_alignment="center", anchor=False)
+st.header("Upload SmartyGrants Export", text_alignment="center", anchor=False)
 
 render_nosection()
 
