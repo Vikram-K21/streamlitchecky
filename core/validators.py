@@ -240,7 +240,7 @@ def _item_required_fields(item: DamageItem, label: str) -> CriterionResult:
         "Asset ID": item.asset_id,
         "Asset Name": item.asset_name,
         "Date Asset Accessible": item.date_accessible,
-        "Asset Sub-Category": item.sub_category,
+        # "Asset Sub-Category": item.sub_category,
         "Asset Capacity": item.capacity,
         "Asset Layout": item.layout,
         "Asset Dimensions": item.dimensions,

@@ -8,7 +8,7 @@ from core.models import DamageItem
 # starts a new damage item record.
 ASSET_CATEGORY_VALUES = frozenset({
     "Public Infrastructure",
-    "Transport Infrastructure",
+    "Transport",
 })
 
 # Full option list of the Asset Sub-Category checkbox group. The text export
@@ -240,7 +240,7 @@ def _parse_sub_category(item: DamageItem, lines: list[str], cursor: int) -> int:
             item.sub_category = lines[cursor]
             cursor += 1
     if item.sub_category is None:
-        item.parse_warnings.append("No Asset Sub-Category selection found.")
+        item.parse_notes.append("No Asset Sub-Category selection found.")
     return cursor
 
 
